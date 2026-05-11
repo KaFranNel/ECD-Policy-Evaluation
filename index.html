@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECD Policy Assessment Report</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .chart-container {
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .chart-container iframe {
+            width: 100%;
+            height: auto;
+            min-height: 350px;
+            border: none;
+        }
+        .card p {
+            margin: 12px 0 0 0;
+            color: #666;
+            font-size: 13px;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Navigation button styles */
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+            z-index: 100;
+        }
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #3498db;
+        }
+        .nav-btn.active {
+            background-color: #e67e22;
+        }
+        .category-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Assessing the Effectiveness of Policies that Support Early Childhood Development during Emergencies in Kenya.</h1>
+
+<!-- Navigation Buttons -->
+<div class="nav-buttons">
+    <button class="nav-btn" onclick="showCategory('all')">Show All</button>
+    <button class="nav-btn" onclick="showCategory('policy')">Policy Familiarity & Implementation</button>
+    <button class="nav-btn" onclick="showCategory('training')">Training & Capacity</button>
+    <button class="nav-btn" onclick="showCategory('funding')">Funding & Resource Allocation</button>
+    <button class="nav-btn" onclick="showCategory('assessment')">Assessment & Reporting</button>
+    <button class="nav-btn" onclick="showCategory('recommendations')">Policy Recommendations</button>
+    <button class="nav-btn" onclick="showCategory('access')">Access to ECD Services</button>
+    <button class="nav-btn" onclick="showCategory('continuity')">Continuity of Learning</button>
+    <button class="nav-btn" onclick="showCategory('preparedness')">Emergency Preparedness</button>
+    <button class="nav-btn" onclick="showCategory('collaboration')">Stakeholder Collaboration</button>
+    <button class="nav-btn" onclick="showCategory('camps')">Emergency Camps</button>
+    <button class="nav-btn" onclick="showCategory('mhpss')">MHPSS</button>
+    <button class="nav-btn" onclick="showCategory('wellbeing')">Child Wellbeing Priorities</button>
+</div>
+
+<!-- Policy Familiarity & Implementation section -->
+<div id="policy" class="category-section">
+    <h2>Policy Familiarity & Implementation</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Familiarity with Kenya Education in Emergencies Policy" src="https://datawrapper.dwcdn.net/tM6mj/1/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Familiarity with Kenya Education in Emergencies Policy</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Evaluations Conducted" src="https://datawrapper.dwcdn.net/LUuIE/1/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Evaluations Conducted</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Years Since Last Evaluation" src="https://datawrapper.dwcdn.net/KRnId/1/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Years Since Last Evaluation</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Availability of ECD Programs" src="https://datawrapper.dwcdn.net/gGVWc/1/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Availability of ECD Programs</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Policy influence on county planning" aria-label="Donut Chart" id="datawrapper-chart-fOWol" src="https://datawrapper.dwcdn.net/fOWol/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Policy influence on county planning</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Identified Gaps in ECD Policy Implementation" src="https://datawrapper.dwcdn.net/DKtNG/1/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Identified Gaps in ECD Policy Implementation</p>
+        </div>
+    </div>
+</div>
+
+<!-- Training & Capacity section -->
+<div id="training" class="category-section">
+    <h2>Training & Capacity</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Informal Training Received" aria-label="Pie Chart" id="datawrapper-chart-wHCvR" src="https://datawrapper.dwcdn.net/wHCvR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="572" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Informal Training Received</p>
+        </div>
+    </div>
+</div>
+
+<!-- Funding & Resource Allocation section -->
+<div id="funding" class="category-section">
+    <h2>Funding & Resource Allocation</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Budget Allocation for Child-Focused Disaster Response" aria-label="Donut Chart" id="datawrapper-chart-DnQd6" src="https://datawrapper.dwcdn.net/DnQd6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="599" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Budget Allocation for Child-Focused Disaster Response</p>
+        </div>
+    </div>
+</div>
+
+<!-- Assessment & Reporting section -->
+<div id="assessment" class="category-section">
+    <h2>Assessment & Reporting</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Needs Assessments and Impact Evaluations" aria-label="Column Chart" id="datawrapper-chart-18BRp" src="https://datawrapper.dwcdn.net/18BRp/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="488" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Needs Assessments and Impact Evaluations</p>
+        </div>
+    </div>
+</div>
+
+<!-- Policy Recommendations section -->
+<div id="recommendations" class="category-section">
+    <h2>Policy Recommendations</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Suggested Changes" aria-label="Pie Chart" id="datawrapper-chart-PxeEz" src="https://datawrapper.dwcdn.net/PxeEz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="334" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Suggested Changes</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Lessons to Apply" aria-label="Bar Chart" id="datawrapper-chart-tzTXf" src="https://datawrapper.dwcdn.net/tzTXf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="396" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Lessons to Apply</p>
+        </div>
+    </div>
+</div>
+
+<!-- Access to ECD Services section -->
+<div id="access" class="category-section">
+    <h2>Access to ECD Services</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="School/ECD Closures During 2024 El Nino" aria-label="Pie Chart" id="datawrapper-chart-fnDv8" src="https://datawrapper.dwcdn.net/fnDv8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>School/ECD Closures During 2024 El Nino</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Time until Schools Resumed" aria-label="Pie Chart" id="datawrapper-chart-5px0H" src="https://datawrapper.dwcdn.net/5px0H/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Time until Schools Resumed</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Weeks of School Missed by Children during 2024 El Nino Floods" aria-label="Bar Chart" id="datawrapper-chart-JU6ep" src="https://datawrapper.dwcdn.net/JU6ep/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="344" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Weeks of School Missed by Children during 2024 El Nino Floods</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Mental Health Support" aria-label="Bar Chart" id="datawrapper-chart-F1P8N" src="https://datawrapper.dwcdn.net/F1P8N/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="352" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Mental Health Support</p>
+        </div>
+    </div>
+</div>
+
+<!-- Continuity of Learning section -->
+<div id="continuity" class="category-section">
+    <h2>Continuity of Learning</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Level of Concern for Child's Development" aria-label="Column Chart" id="datawrapper-chart-Du9Vx" src="https://datawrapper.dwcdn.net/Du9Vx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Level of Concern for Child's Development</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Types of Emergencies Affecting Schools" aria-label="Donut Chart" id="datawrapper-chart-pjNja" src="https://datawrapper.dwcdn.net/pjNja/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="572" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Types of Emergencies Affecting Schools</p>
+        </div>
+    </div>
+</div>
+
+<!-- Emergency Preparedness section -->
+<div id="preparedness" class="category-section">
+    <h2>Emergency Preparedness</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Contingency Plans" aria-label="Bar Chart" id="datawrapper-chart-kbSI4" src="https://datawrapper.dwcdn.net/kbSI4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="435" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Contingency Plans</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Impact of 2024 El Nino Floods" aria-label="Column Chart" id="datawrapper-chart-o1wV2" src="https://datawrapper.dwcdn.net/o1wV2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="419" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Impact of 2024 El Nino Floods</p>
+        </div>
+    </div>
+</div>
+
+<!-- Stakeholder Collaboration section -->
+<div id="collaboration" class="category-section">
+    <h2>Stakeholder Collaboration</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Collaboration of Stakeholders" aria-label="Bar Chart" id="datawrapper-chart-Mirqe" src="https://datawrapper.dwcdn.net/Mirqe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="352" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Collaboration of Stakeholders</p>
+        </div>
+    </div>
+</div>
+
+<!-- Emergency Camps section -->
+<div id="camps" class="category-section">
+    <h2>Emergency Camps</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Were Emergency Camps Present?" aria-label="Grouped column chart" id="datawrapper-chart-dbmEN" src="https://datawrapper.dwcdn.net/dbmEN/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="463" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Were Emergency Camps Present?</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Services Provided in Community Emergency Camps" aria-label="Pie Chart" id="datawrapper-chart-Yh1xH" src="https://datawrapper.dwcdn.net/Yh1xH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="599" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Services Provided in Community Emergency Camps</p>
+        </div>
+    </div>
+</div>
+
+<!-- MHPSS section -->
+<div id="mhpss" class="category-section">
+    <h2>MHPSS (Mental Health & Psychosocial Support)</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Psychosocial Support Services" aria-label="Column Chart" id="datawrapper-chart-Pe3H2" src="https://datawrapper.dwcdn.net/Pe3H2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="487" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Psychosocial Support Services</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Mental Health Support" aria-label="Bar Chart" id="datawrapper-chart-F1P8N" src="https://datawrapper.dwcdn.net/F1P8N/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="352" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Mental Health Support</p>
+        </div>
+    </div>
+</div>
+
+<!-- Child Wellbeing Priorities section -->
+<div id="wellbeing" class="category-section">
+    <h2>Child Wellbeing Priorities</h2>
+    <div class="cards-container">
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Changes in Children's Behaviour After Emergency" aria-label="Column Chart" id="datawrapper-chart-FYn3N" src="https://datawrapper.dwcdn.net/FYn3N/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="507" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Changes in Children's Behaviour After Emergency</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Priority Areas for Child Well being in Emergencies" aria-label="Bar Chart" id="datawrapper-chart-WiM29" src="https://datawrapper.dwcdn.net/WiM29/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="415" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Priority Areas for Child Wellbeing in Emergencies</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showCategory(categoryId) {
+        // Hide all category sections
+        var sections = document.getElementsByClassName('category-section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].style.display = 'none';
+        }
+        
+        // Remove active class from all buttons
+        var buttons = document.getElementsByClassName('nav-btn');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('active');
+        }
+        
+        // If 'all' is selected, show all sections
+        if (categoryId === 'all') {
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'block';
+            }
+            // Highlight the Show All button
+            var showAllButton = document.querySelector('[onclick="showCategory(\'all\')"]');
+            if (showAllButton) {
+                showAllButton.classList.add('active');
+            }
+        } else {
+            // Show the selected section
+            var selectedSection = document.getElementById(categoryId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+            // Highlight the clicked button
+            var clickedButton = document.querySelector('[onclick="showCategory(\'' + categoryId + '\')"]');
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
+        }
+    }
+    
+    // Show all sections by default when page loads
+    showCategory('all');
+</script>
+
+</body>
+</html>
