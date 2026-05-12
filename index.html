@@ -26,6 +26,22 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #3498db;
         }
+        h3 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #e67e22;
+        }
+        .section-description {
+            background-color: #e8f4fd;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            line-height: 1.6;
+            font-size: 16px;
+        }
         .cards-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -98,6 +114,9 @@
         .category-section {
             display: none;
         }
+        .theme-subsection {
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
@@ -118,6 +137,7 @@
     <button class="nav-btn" onclick="showCategory('camps')">Emergency Camps</button>
     <button class="nav-btn" onclick="showCategory('mhpss')">MHPSS</button>
     <button class="nav-btn" onclick="showCategory('wellbeing')">Child Wellbeing Priorities</button>
+    <button class="nav-btn" onclick="showCategory('sentiment')">Respondent Sentiment</button>
 </div>
 
 <!-- Policy Familiarity & Implementation section -->
@@ -249,6 +269,12 @@
             </div>
             <p>Mental Health Support</p>
         </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Ages of Children" aria-label="Column Chart" id="datawrapper-chart-yThl0" src="https://datawrapper.dwcdn.net/yThl0/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Ages of Children</p>
+        </div>
     </div>
 </div>
 
@@ -287,6 +313,12 @@
             </div>
             <p>Impact of 2024 El Nino Floods</p>
         </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Was your community affected by El Nino?" aria-label="Pie Chart" id="datawrapper-chart-fVNVQ" src="https://datawrapper.dwcdn.net/fVNVQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Was your community affected by El Nino?</p>
+        </div>
     </div>
 </div>
 
@@ -319,6 +351,12 @@
             </div>
             <p>Services Provided in Community Emergency Camps</p>
         </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Emergency Camp Services for Children" aria-label="Bar Chart" id="datawrapper-chart-gNcdd" src="https://datawrapper.dwcdn.net/gNcdd/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="563" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Emergency Camp Services for Children</p>
+        </div>
     </div>
 </div>
 
@@ -338,6 +376,12 @@
             </div>
             <p>Mental Health Support</p>
         </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Speech Development" aria-label="Column Chart" id="datawrapper-chart-yOm91" src="https://datawrapper.dwcdn.net/yOm91/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="438" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Speech Development</p>
+        </div>
     </div>
 </div>
 
@@ -356,6 +400,140 @@
                 <iframe title="Priority Areas for Child Well being in Emergencies" aria-label="Bar Chart" id="datawrapper-chart-WiM29" src="https://datawrapper.dwcdn.net/WiM29/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="415" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
             </div>
             <p>Priority Areas for Child Wellbeing in Emergencies</p>
+        </div>
+        <div class="card">
+            <div class="chart-container">
+                <iframe title="Noticed Emotional Distress in Children" aria-label="Donut Chart" id="datawrapper-chart-hWLdk" src="https://datawrapper.dwcdn.net/hWLdk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+            <p>Noticed Emotional Distress in Children</p>
+        </div>
+    </div>
+</div>
+
+<!-- Respondent Sentiment section -->
+<div id="sentiment" class="category-section">
+    <h2>Respondent Sentiment</h2>
+    <div class="section-description">
+        The visuals on this page illustrate respondent sentiment across all NVivo-coded themes, using a variety of chart types to show how different stakeholder groups described their experiences, concerns, and perspectives within each sub-theme. These charts highlight patterns in how parents, teachers, health workers, NGOs, government officials, and other respondents contributed to the qualitative findings.
+    </div>
+    
+    <!-- Theme 1 -->
+    <div class="theme-subsection">
+        <h3>Theme 1: Policy Implementation & Awareness</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Policy Success" aria-label="Stacked column chart" id="datawrapper-chart-KauPH" src="https://datawrapper.dwcdn.net/KauPH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="504" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Policy Success</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Policy Challenges" aria-label="Stacked column chart" id="datawrapper-chart-16hkL" src="https://datawrapper.dwcdn.net/16hkL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="642" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Policy Challenges</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Policy Recommendations" aria-label="Split Bars" id="datawrapper-chart-Rugvn" src="https://datawrapper.dwcdn.net/Rugvn/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="346" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Policy Recommendations</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme 2 -->
+    <div class="theme-subsection">
+        <h3>Theme 2: Access to ECD Services</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Continuity of Learning" aria-label="Stacked column chart" id="datawrapper-chart-5cpTx" src="https://datawrapper.dwcdn.net/5cpTx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="485" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Continuity of Learning</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Barriers to Access" aria-label="Stacked column chart" id="datawrapper-chart-ClNeg" src="https://datawrapper.dwcdn.net/ClNeg/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="478" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Barriers to Access</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Current ECD Support Efforts" aria-label="Split Bars" id="datawrapper-chart-Xi2Yk" src="https://datawrapper.dwcdn.net/Xi2Yk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="218" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Current ECD Support Efforts</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme 3 -->
+    <div class="theme-subsection">
+        <h3>Theme 3: Emergency Preparedness</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Existing Plans" aria-label="Stacked column chart" id="datawrapper-chart-CuT2N" src="https://datawrapper.dwcdn.net/CuT2N/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Existing Plans</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Implementation &amp; Training Gaps" aria-label="Stacked column chart" id="datawrapper-chart-AazTx" src="https://datawrapper.dwcdn.net/AazTx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="497" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Implementation & Training Gaps</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme 4 -->
+    <div class="theme-subsection">
+        <h3>Theme 4: Stakeholder Collaboration</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Stakeholder Collaboration" aria-label="Grouped column chart" id="datawrapper-chart-wRFrH" src="https://datawrapper.dwcdn.net/wRFrH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="497" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Stakeholder Collaboration</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme 5 -->
+    <div class="theme-subsection">
+        <h3>Theme 5: Mental Health & Psychosocial Support</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Available Services and Gaps" aria-label="Stacked column chart" id="datawrapper-chart-PDdHd" src="https://datawrapper.dwcdn.net/PDdHd/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="405" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Available Services and Gaps</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Behaviour Changes" aria-label="Split Bars" id="datawrapper-chart-gEcWa" src="https://datawrapper.dwcdn.net/gEcWa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="166" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Behaviour Changes</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme 6 -->
+    <div class="theme-subsection">
+        <h3>Theme 6: Children's Wellbeing</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Wellbeing and Needs" aria-label="Small multiple column chart" id="datawrapper-chart-P9crv" src="https://datawrapper.dwcdn.net/P9crv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="267" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Wellbeing and Needs</p>
+            </div>
+            <div class="card">
+                <div class="chart-container">
+                    <iframe title="Children's Participation" aria-label="Grouped column chart" id="datawrapper-chart-hZRKa" src="https://datawrapper.dwcdn.net/hZRKa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                </div>
+                <p>Children's Participation</p>
+            </div>
         </div>
     </div>
 </div>
